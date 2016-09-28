@@ -8,7 +8,7 @@ public class Principal {
 
 	
 	System.out.println("hola mundo");
-	System.out.println("XXXXXX");
+	System.out.println("YYYYYYY");
 	
 		
 	}
