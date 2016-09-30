@@ -9,6 +9,7 @@ public class Principal {
 	
 	System.out.println("hola mundo");
 	System.out.println("esto se ha modificado");
+	System.out.println("esto se ha modificado desde la maq clon");
 	
 		
 	}
