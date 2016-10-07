@@ -32,13 +32,23 @@ public class Cuadrado extends Figura {
 		
 	}
 	
-	public double area (){
-		
+//	public double area (){
+//		
+//		
+//		return lado*lado;
+//		
+//		
+//	}
+	
+	@Override
+	public double area() {
 		
 		return lado*lado;
-		
+//		
 		
 	}
+	
+
 
 	public void imprimir(){
 		
@@ -55,6 +65,9 @@ public class Cuadrado extends Figura {
 	public String toString() {
 		return "Cuadrado [lado=" + lado + "]"  + super.toString();
 	}
+
+
+	
 	
 	
 

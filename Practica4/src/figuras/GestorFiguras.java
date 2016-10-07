@@ -22,29 +22,27 @@ public class GestorFiguras {
 	
 	public void anadirFigura(Figura fig){
 		
+		boolean enc=false;
 		
-		if(listaFiguras.isEmpty()==true){
+		for(int i=0;i<listaFiguras.size() && enc==false;i++){
 			
-			listaFiguras.add(fig);
-
-			
-		}
-		
-		else {
-		
-		for(int i=0; i<listaFiguras.size();i++){
-		
 			if(fig.getTitulo().equalsIgnoreCase(listaFiguras.get(i).getTitulo())){
-			
-			   System.out.println("esta figura ya esta en la lista");
-			
-			}
-			else{
-				listaFiguras.add(fig);
-				System.out.println("figura anadida a la lista");
+				
+				System.out.println("la figura ya esta");
+				enc=true;
 			}
 		}
+		
+		
+		if(enc==false){
+		listaFiguras.add(fig);
+		System.out.println("figura añadida");
 		}
+		
+		
+		
+		
+		
 		
 	}
 	
@@ -81,6 +79,25 @@ public class GestorFiguras {
 	        }
 		
 	}
+	
+	
+	public void sumAreas(){
+		
+		double sum=0;
+		
+		 for(int i=0;i<listaFiguras.size();i++) {
+		    	
+			 sum=sum+listaFiguras.get(i).area();
+			 	
+		    	
+		    	
+	        }
+		 
+		 System.out.println("suma de areas es "+sum);
+		
+	}
+	
+	
 
 	@Override
 	public String toString() {

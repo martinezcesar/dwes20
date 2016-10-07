@@ -1,6 +1,6 @@
 package figuras;
 
-public class Figura {
+public abstract class Figura {
 	
 	
 	String titulo;
@@ -34,6 +34,11 @@ public class Figura {
 	public void setColor(Color color) {
 		this.color = color;
 	}
+	
+	public abstract double area();
+
+	public abstract double perimetro();
+
 
 	@Override
 	public String toString() {

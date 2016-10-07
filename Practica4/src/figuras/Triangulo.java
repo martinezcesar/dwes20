@@ -69,6 +69,8 @@ public class Triangulo extends Figura {
 		
 		
 	}
+	
+
 
 
 	public void imprimir(){

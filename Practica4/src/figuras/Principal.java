@@ -14,7 +14,9 @@ public class Principal {
 		
 		//tri.imprimir();
 		
-		Cuadrado cuad= new Cuadrado(4.2,"cuad",Color.BLUE);
+	
+		
+		Cuadrado cuad= new Cuadrado(2,"cuad",Color.BLUE);
 		
 		//cuad.imprimir();
 		
@@ -27,12 +29,12 @@ public class Principal {
 		GestorFiguras listadoFiguras = new GestorFiguras();
 		
 		listadoFiguras.anadirFigura(cuad);
-		listadoFiguras.anadirFigura(tri);
+		listadoFiguras.anadirFigura(circ);
+		listadoFiguras.anadirFigura(cuad);
+
 		listadoFiguras.mostrarFiguras();
-		
-		listadoFiguras.eliminarFigura("tri");
-		listadoFiguras.mostrarFiguras();
-		
+	
+		listadoFiguras.sumAreas();
 		
 	
 	}
